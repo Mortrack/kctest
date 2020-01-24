@@ -1,0 +1,60 @@
+
+<section class="Login">
+    <div class="main-container">
+        <div class="login-container">
+            <div class="mainLoginForm-container">
+                <div class="loginForm-container" id="loginFormContainer">
+                    <div class="formTitle-container">
+                        <div class="logo-container">
+                            <img src="/img/Logo/kc_logo.png" alt="">
+                        </div>
+                        <div class="title-verticalLine"></div>
+                        <div class="formTitleText-container">
+                            <div class="formPrimaryTitleText-container">
+                                <h2>KnowledgeCity</h2>
+                            </div>
+                            <div class="formSecundaryTitleText-container">
+                                <h3>Learning Solutions</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="loginWelcomeMessage-container">
+                        <div class="primaryLoginWelcomeMessage-container">
+                            <p><span>Welcome to the Learning Management System</span></p>
+                        </div>
+                        <div class="secundaryLoginWelcomeMessage-container">
+                            <p><span>Please log in to continue</span></p>
+                        </div>
+                    </div>
+                    <form action="" class="login-form">
+                        <div class="credentials-container">
+                            <input type="text" placeholder="Username" class="usernameSignIn-input" id="usernameLoginInput" {% if (username != "")%} value={{ username }} {% endif %} required>
+                            <input type="password" placeholder="Password" class="password-input" id="passwordLoginInput" {% if (password != "")%} value={{ password }} {% endif %} required>
+                        </div>
+                        <div class="loginExtraOptions-container">
+                            <div class="rememberMe-container">
+                                <label class="checkmark-container">Remember me
+                                    <input type="checkbox" class="rememberMe-checkbox" id="rememberMeCheckbox" {% if password!="" and username!="" %} checked {% endif %}>
+                                    <span class="checkmark"><img src="/img/Login/check_icon.png" alt=""></span>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="signIn-btn" id="loginButton"><span>Log In</span><img src="/img/Login/login_icon.png" alt=""></button>
+                    </form>
+                </div>
+                <div class="process-container" id="processContainer">
+                    <div class="formTitle-container" id="processTitleContainer">
+                        <h2>ERROR!</h2>
+                    </div>
+                    <div id="processImageContainer"></div>
+                    <div class="processMessage-container">
+                        <ul class="processMessageList-container" id="processMessageListContainer"></ul>
+                    </div>
+                    <div class="processButton-container">
+                        <button href="#" id="processButton"><span>GOT IT</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

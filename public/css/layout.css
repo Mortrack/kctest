@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Franklin Gothic Medium Cond Regular";
+  src: url("/fonts/Franklin Gothic Medium Cond Regular.ttf") format("truetype"); }
+body {
+  font-family: Arial; }
+
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: #F9F9F9; }
+
+.main {
+  position: relative;
+  z-index: 1; }
+
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 100%; }
+
+  h2 {
+    margin: 0px; } }
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 50%; }
+
+  h2 {
+    margin: 0px; } }
+.C-bg-ultraDarkGreen {
+  background: #0B3D00; }
+
+.C-bg-darkGreen {
+  background: #0F5200; }
+
+.C-bg-darkSmoothGray {
+  background: #3D3D3D; }
+
+.C-bg-mediumSmoothGray {
+  background: #959595; }
+
+.C-bg-lightSmoothGray {
+  background: #C1C1C1; }
+
+.C-bg-ultraLightGreen {
+  background: #17CF3D; }
+
+.C-bg-black {
+  background: #000001; }
+
+.C-bg-white {
+  background: #FFFDFE; }
+
+.C-bg-pcbDarkGreen {
+  background: #246331; }
+
+.C-bg-pcbLightGreen {
+  background: #8CC63F; }
+
+/*# sourceMappingURL=layout.css.map */

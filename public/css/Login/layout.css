@@ -1,0 +1,227 @@
+.main-container {
+  background: #F3F3F3;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: relative;
+  z-index: 2; }
+
+.login-container {
+  height: 100%;
+  width: 100%;
+  padding: 7vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  position: relative;
+  z-index: 3; }
+
+.mainLoginForm-container {
+  width: 465px;
+  border-radius: 3px; }
+
+.logo-container img {
+  width: 110px; }
+
+.loginForm-container,
+.process-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.formTitle-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-bottom: 60px; }
+
+.title-verticalLine {
+  width: 2px;
+  height: 80%;
+  background: #E0DBD7;
+  margin: auto 0px;
+  margin-left: 10px; }
+
+.formTitleText-container {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.formTitleText-container h2,
+.formTitleText-container h3 {
+  margin: 0px; }
+
+.formTitleText-container h2 {
+  color: #EC8439;
+  font-weight: bold;
+  font-size: 42px; }
+
+.formTitleText-container h3 {
+  font-size: 27px;
+  font-weight: normal; }
+
+.loginWelcomeMessage-container {
+  margin-bottom: 40px; }
+
+.loginWelcomeMessage-container p {
+  margin: 0px; }
+
+.primaryLoginWelcomeMessage-container {
+  font-size: 19px;
+  font-weight: bold; }
+
+.secundaryLoginWelcomeMessage-container {
+  font-size: 12px;
+  font-weight: bold; }
+
+.credentials-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center; }
+
+.credentials-container input {
+  width: 100%;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 18px 0px;
+  padding-left: 45px;
+  margin-bottom: 3%;
+  border: 2px solid #BEBEBE;
+  border-radius: 40px;
+  color: #3D3D3D; }
+
+.credentials-container input:focus {
+  border-color: #EC8439;
+  color: #EC8439; }
+
+::placeholder {
+  color: #3D3D3D;
+  opacity: 0.5; }
+
+::-ms-input-placeholder {
+  color: #3D3D3D;
+  opacity: 0.5; }
+
+::-ms-input-placeholder {
+  color: #3D3D3D;
+  opacity: 0.5; }
+
+.usernameSignIn-input {
+  background-image: url("/img/Login/username_icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center; }
+
+.password-input {
+  background-image: url("/img/Login/password_icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: center; }
+
+.checkmark-container {
+  font-size: 16px;
+  font-weight: bold;
+  color: #3D3D3D; }
+
+.checkmark-container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 4px;
+  border: 1px solid #BEBEBE;
+  background-color: #FFFFFF;
+  text-align: center; }
+
+.checkmark-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0px;
+  width: 0px; }
+
+.checkmark img {
+  display: none;
+  position: relative;
+  bottom: 5px;
+  width: 10px; }
+
+.checkmark-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+  color: #FFFFFF; }
+
+.checkmark-container input:checked ~ .checkmark img {
+  display: inline; }
+
+.signIn-btn {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+.signIn-btn span {
+  margin: auto 0px; }
+
+.signIn-btn {
+  width: 100%;
+  padding: 7px 20px;
+  font-size: 22px;
+  background: #EC8439;
+  border: 1px solid #EC8439;
+  text-decoration: none;
+  color: #FFFDFE;
+  border-radius: 40px;
+  cursor: pointer; }
+
+.processButton-container button {
+  width: 100%;
+  padding: 7px 20px;
+  font-size: 22px;
+  background: #ED3237;
+  border: 1px solid #ED3237;
+  text-decoration: none;
+  color: #FFFDFE;
+  border-radius: 40px;
+  cursor: pointer; }
+
+.signIn-btn img {
+  width: 40px; }
+
+.signIn-btn:hover {
+  background: #C8723A; }
+
+.loginExtraOptions-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-bottom: 60px; }
+
+.processMessageList-container {
+  text-align: center; }
+
+/*# sourceMappingURL=layout.css.map */

@@ -1,0 +1,24 @@
+# Remove index.php from url and remove the question mark from the request but maintain the query string
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-1
+RewriteRule ^(.*)$ index.php?$1 [L,QSA]
+
+
+
+#IMPORTANTE: Para que esto funcione, tenemos que:
+#       1)abrir el archivo "httpd.conf", el cual se puede abrir desde XAMPP-->Config-->Apache(httpd.conf).
+#       2)Cambiar el siguiente codigo, contenido dentro de dicho documento:
+#DocumentRoot "C:/xampp/htdocs/"
+#<Directory "C:/xampp/htdocs/">
+
+#        POR el siguiente codigo como fue en este caso o el que corresponda, segun la direccion del folder
+#        "public" del archivo que trabajemos:
+#DocumentRoot "C:/xampp/htdocs/knowledgeCityTest/public"
+#<Directory "C:/xampp/htdocs/knowledgeCityTest/public">
+
+
+# ---------- BANNED IP'S WILL BE PLACE BELOW THIS PART THROUGH PHP CLASS "\Core\Ddos" ----------
+

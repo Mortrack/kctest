@@ -1,0 +1,12 @@
+{
+  "autoload":{
+    "psr-4":{
+      "Core\\":"Core/",
+      "App\\":"App/"
+    }
+  },
+  "require": {
+    "twig/twig": "^2.0",
+    "piwik/device-detector": "^3.11"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- WEBSITE TITLE -->
+    <title>{% block title %}{% endblock %}</title>
+
+    <!-- WEBSITE PROPERTIES -->
+    <!-- Note: <meta charset="utf-8"> is used to allow special characters on the web page -->
+    <meta charset="utf-8">
+    <!-- Nota: el empleo de "author" nos permite tambien tener prioridad semantica al definir a quien pertenece la pagina para que los buscadores prioricen esta pagina web cuando el usuario teclee el nombre del dueno/autor que se defina en este punto -->
+    <meta name="author" content="Cesar Miranda Meza">
+    <link rel="icon" type="image/png" href="/img/Logo/htmlLogo_test.png" />
+
+    <!-- THEME CSS -->
+    <!-- Mandamos llamar al archivo que se encargará de normalizar y resetear todas las propiedades para que nuestra pagina web se vea igual en todos los navegadores -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/layout.css">
+
+    <!-- USER-DEVICE PROPERTIES -->
+    <!-- Nota: el empleo de "viewport" nos permite que la pagina web cargue visualmente de forma correcta sin importar el dispositivo en el que se este viendo y accesando a esta pagina web:
+    ***	"width=device-width": Establecemos que el ancho de la página sea igual al del dispositivo.
+    ***	"user-scalable=no": Establecemos que el usuario no puede escalar el sitio web.
+    ***	"initial-scale=1.0": Establecemos que la página tendrá un tamaño inicial de 1 (original).
+    ***	"maximum-scale=1.0": Establecemos que la página tendrá un tamaño máximo de 1.
+    ***	"minimum-scale=1.0": Establecemos que la página tendrá un tamaño mínimo de 1.
+    -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    {% block styles %}
+    {% endblock %}
+</head>
+<body class="content-text">
+    <header>
+        {% block header %}
+        {% endblock %}
+    </header>
+    <section class="main">
+        {% block body %}
+        {% endblock %}
+    </section>
+    <footer>
+        {% block footer %}
+        {% endblock %}
+    </footer>
+    <script src="/js/Config.js"></script>
+    {% block javascript %}
+    {% endblock %}
+</body>
+</html>
+
